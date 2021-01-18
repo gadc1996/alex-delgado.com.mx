@@ -1,0 +1,33 @@
+{
+  "name": "alex-delgado.com.mx",
+  "version": "1.0.0",
+  "description": "Alex Delgado Personal Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadc1996/alex-delgado.com.mx.git"
+  },
+  "keywords": [
+    "Web",
+    "Development"
+  ],
+  "author": "Alex Delgado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gadc1996/alex-delgado.com.mx/issues"
+  },
+  "homepage": "https://github.com/gadc1996/alex-delgado.com.mx#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}
