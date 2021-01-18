@@ -13,7 +13,7 @@ a:hover {
 }
 
 .nav-bar {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
   padding: 1em 2em;
   display: flex;
   flex-direction: row;
@@ -44,7 +44,6 @@ a:hover {
 }
 
 .parallax {
-  background-image: url("/assets/img/background.jpeg");
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -60,14 +59,16 @@ a:hover {
   font-size: 2em;
   color: #fff;
   overflow: hidden;
-  border-right: 0.15em solid orange;
+  position: relative;
   white-space: nowrap;
   margin: 0 auto;
   animation: blink-caret 0.75s step-end infinite;
 }
+.parallax h1 span {
+  border-right: 0.15em solid orange;
+}
 
 .test {
-  background-color: salmon;
   width: 100vw;
   height: 100vh;
   z-index: 10;

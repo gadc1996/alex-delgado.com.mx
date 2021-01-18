@@ -1,5 +1,5 @@
 .parallax{
-    background-image: url('/assets/img/background.jpeg');
+    // background-image: url('/assets/img/background.jpeg');
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -14,16 +14,20 @@
         font-size: 2em; 
         color: #fff;
         overflow: hidden;
-        border-right: .15em solid orange;
+        position: relative;
         white-space: nowrap;
         margin: 0 auto;
         animation:
-            blink-caret .75s step-end infinite;
+        blink-caret .75s step-end infinite;
+        span{
+            border-right: .15em solid orange;
+
+        }
     }
 }
 
 .test{
-    background-color: salmon;
+    // background-color: salmon;
     width: 100vw;
     height: 100vh;
     z-index: 10;
