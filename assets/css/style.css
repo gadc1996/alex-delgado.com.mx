@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.nav-bar .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-bar .logo a .logo-text {
+  margin: 0 5px;
+}
+.nav-bar .logo a .logo-image {
+  width: 1.3em;
+}
+.nav-bar .nav-link {
+  color: #fff;
+}
+
+.parallax {
+  background-image: url("/assets/img/background.jpeg");
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parallax .typing {
+  font-size: 5em;
+}
+
+.test {
+  background-color: salmon;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=style.css.map */
