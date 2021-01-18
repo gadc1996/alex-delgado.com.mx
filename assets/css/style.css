@@ -56,8 +56,14 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-.parallax .typing {
-  font-size: 5em;
+.parallax h1 {
+  font-size: 2em;
+  color: #fff;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: blink-caret 0.75s step-end infinite;
 }
 
 .test {
@@ -65,6 +71,15 @@ a:hover {
   width: 100vw;
   height: 100vh;
   z-index: 10;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

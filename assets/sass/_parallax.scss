@@ -10,13 +10,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    .typing{
-        font-size: 5em;
+    h1{
+        font-size: 2em; 
+        color: #fff;
+        overflow: hidden;
+        border-right: .15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation:
+            blink-caret .75s step-end infinite;
     }
 }
+
 .test{
     background-color: salmon;
     width: 100vw;
     height: 100vh;
     z-index: 10;
 }
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
