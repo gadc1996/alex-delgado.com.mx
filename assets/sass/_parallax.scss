@@ -1,9 +1,10 @@
+@use 'variables';
+
 .parallax{
-    // background-image: url('/assets/img/background.jpeg');
+    background-image: url('/assets/img/background.jpeg');
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,23 +12,22 @@
     align-items: center;
     justify-content: center;
     h1{
-        font-size: 2em; 
-        color: #fff;
+        font-size: 2.8em; 
+        color: variables.$brown;
         overflow: hidden;
         position: relative;
         white-space: nowrap;
         margin: 0 auto;
-        animation:
-        blink-caret .75s step-end infinite;
-        span{
-            border-right: .15em solid orange;
-
+        .typing{
+            color: variables.$light-brown;
+            border-right: .15em solid variables.$brown;
+            animation:
+            blink-caret .75s step-end infinite;
         }
     }
 }
 
 .test{
-    // background-color: salmon;
     width: 100vw;
     height: 100vh;
     z-index: 10;
@@ -35,5 +35,5 @@
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: variables.$brown; }
   }

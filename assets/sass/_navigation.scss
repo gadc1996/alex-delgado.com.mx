@@ -1,15 +1,16 @@
 @use 'variables';
 
 .nav-bar{
-    background-color: rgba($color: #000000, $alpha: 0);
+    background-color: variables.$gray;
     padding: 1em 2em;
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width: 100%;
     z-index: 1;
+    border-bottom: variables.$blue solid 5px;
     .logo{
         display: flex;
         flex-direction: row;
@@ -30,3 +31,8 @@
         color: variables.$navigation-color;
     }
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
