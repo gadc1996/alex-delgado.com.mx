@@ -1,0 +1,17 @@
+@use 'variables';
+
+.contact{
+    height: 50vh;
+    width: 100%;
+    background-color: variables.$blue;
+    .decoration{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .decoration-image{
+            width: 100%;
+            margin: none;
+        }
+    }
+
+}

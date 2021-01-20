@@ -48,6 +48,7 @@ class TypeWriter{
             //Pause before start typing
             typeSpeed = this.waitStart;
         }
+        console.log(this.txt);
         setTimeout(() => this.type(), typeSpeed);
     }
 }
@@ -62,6 +63,5 @@ function init(){
     const waitStart = txtElement.getAttribute('data-wait-start');
     const waitEnd = txtElement.getAttribute('data-wait-end');
     const speed = txtElement.getAttribute('data-speed');
-    //Init typewriter
     new TypeWriter(txtElement, words, speed, waitStart, waitEnd);
 }
