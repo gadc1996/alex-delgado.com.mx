@@ -19,7 +19,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: left;
   padding-left: 2em;
@@ -101,12 +101,14 @@ a:hover {
   font-size: 1.5em;
 }
 .skillset .row .column .skillbar {
-  margin: 1em 0;
+  margin: 0.5em 0;
   width: 80%;
   border-radius: 10px;
   background-color: #d1e8e2;
 }
 .skillset .row .column .skillbar .progress {
+  font-weight: 900;
+  font-size: 0.7em;
   text-align: right;
   padding: 1em;
   width: 10%;

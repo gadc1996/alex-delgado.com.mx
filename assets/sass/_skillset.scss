@@ -23,11 +23,13 @@
                 font-size: 1.5em;
             }
             .skillbar{
-                margin: 1em 0;
+                margin: .5em 0;
                 width: 80%;
                 border-radius: 10px;
                 background-color: variables.$light-gray;
                 .progress{
+                    font-weight: 900;
+                    font-size: .7em; 
                     text-align: right;
                     padding: 1em;
                     width:10%;

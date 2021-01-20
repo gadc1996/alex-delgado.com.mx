@@ -17,18 +17,25 @@ class ProgressBar{
             return;
         }
         return;
-//        this.actual++;
-        // setTimeout(() => this.filling(), 500);
     }
 }
 
-document.addEventListener('DOMContentLoaded', init);
-
+//document.addEventListener('DOMContentLoaded', init);
+ let options = {
+     threshold: 1.0
+ }
+ let observer = new IntersectionObserver(init, options);
+ var target = document.querySelector('.skillbar');
+ observer.observe(target);
+ var isFilled = false;
 function init(){
-    const progressBars = document.querySelectorAll('.progress');
-    progressBars.forEach( progressBar => {
+    if(!isFilled){
+        const progressBars = document.querySelectorAll('.progress');
+        progressBars.forEach( progressBar => {
         let fill = progressBar.getAttribute('data-fill');
         let skillName = progressBar.innerHTML;
         new ProgressBar(progressBar, fill, skillName);
-    })
+    });
+        isFilled = true;
+    }
 }
