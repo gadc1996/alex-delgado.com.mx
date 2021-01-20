@@ -2,12 +2,12 @@ class ProgressBar{
     constructor(progressBar, fill, skillName){
     this.progressBar = progressBar;
     this.skillName = skillName
-    this.speed = 20;
     this.fill = fill;
+    this.speed = 15;
     this.actual = 0;
     this.filling();
     }
-    filling(){
+    filling(){ 
         if( this.actual < this.fill){
             this.progressBar.style.width = String(this.actual++)+"%";
             this.progressBar.innerHTML = this.skillName+String(this.actual)+"%";
@@ -20,22 +20,22 @@ class ProgressBar{
     }
 }
 
-//document.addEventListener('DOMContentLoaded', init);
- let options = {
-     threshold: 1.0
- }
- let observer = new IntersectionObserver(init, options);
- var target = document.querySelector('.skillbar');
- observer.observe(target);
- var isFilled = false;
-function init(){
-    if(!isFilled){
-        const progressBars = document.querySelectorAll('.progress');
-        progressBars.forEach( progressBar => {
-        let fill = progressBar.getAttribute('data-fill');
-        let skillName = progressBar.innerHTML;
-        new ProgressBar(progressBar, fill, skillName);
-    });
-        isFilled = true;
-    }
+let options = {
+    threshold: 0
 }
+
+var progressBars = document.querySelectorAll('.progress');
+let observer = new IntersectionObserver((progressBars) => {
+    progressBars.forEach( progressBar => {
+        if(progressBar.isIntersecting ){
+            let fill = progressBar.target.getAttribute('data-fill');
+            let skillName = progressBar.target.innerHTML;
+            new ProgressBar(progressBar.target, fill, skillName)
+            observer.unobserve(progressBar.target)
+        }
+    });
+    
+}, options);
+
+progressBars.forEach( progressBar => observer.observe(progressBar));
+
