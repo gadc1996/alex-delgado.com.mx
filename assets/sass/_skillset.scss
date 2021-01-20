@@ -1,0 +1,55 @@
+@use 'variables';
+
+.skillset{
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        font-size: 2em;
+    }
+    .row{
+        margin: 1em 0;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        .column{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .subtitle{
+                text-align: center;
+                font-size: 1.5em;
+            }
+            .skillbar{
+                margin: 1em 0;
+                width: 80%;
+                border-radius: 10px;
+                background-color: variables.$light-gray;
+                .progress{
+                    text-align: right;
+                    padding: 1em;
+                    width:10%;
+                    color: #fff;
+                    border-radius: 10px;
+                    position: relative;
+                    .skillName{
+                        position: absolute;
+                        left: 10%;
+                    }
+                }
+                .blue{
+                    background-color: variables.$blue;
+                }
+                .gray{
+                    background-color: variables.$gray;
+                }
+                .brown{
+                    background-color: variables.$brown;
+                }
+            }
+        }
+    }
+
+}

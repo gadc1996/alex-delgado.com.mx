@@ -6,29 +6,16 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     z-index: 1;
     border-bottom: variables.$blue solid 5px;
-    .logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        a{
-            text-decoration: none;
-            color: variables.$navigation-color;
-            .logo-text{
-                margin: 0 5px;
-            }
-            .logo-image{
-                width: 1.3em;
-            }    
-        }
-    }
     .nav-link{
         color: variables.$navigation-color;
+    }
+    .active{
+        color: variables.$light-brown;
     }
 }
 .sticky {

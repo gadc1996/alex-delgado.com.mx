@@ -12,63 +12,23 @@ a:hover {
   text-decoration: underline;
 }
 
-.nav-bar {
-  background-color: #2c3531;
-  padding: 1em 2em;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  z-index: 1;
-  border-bottom: #116466 solid 5px;
-}
-.nav-bar .logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.nav-bar .logo a {
-  text-decoration: none;
-  color: #fff;
-}
-.nav-bar .logo a .logo-text {
-  margin: 0 5px;
-}
-.nav-bar .logo a .logo-image {
-  width: 1.3em;
-}
-.nav-bar .nav-link {
-  color: #fff;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 .parallax {
-  background-image: url("/assets/img/background.jpeg");
   width: 100vw;
   height: 100vh;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
+  display: none;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 2em;
 }
 .parallax h1 {
   font-size: 2.8em;
   color: #d9b08c;
-  overflow: hidden;
   position: relative;
   white-space: nowrap;
-  margin: 0 auto;
 }
 .parallax h1 .typing {
   color: #ffcb9a;
@@ -89,6 +49,83 @@ a:hover {
   50% {
     border-color: #d9b08c;
   }
+}
+.nav-bar {
+  background-color: #2c3531;
+  padding: 1em 2em;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  border-bottom: #116466 solid 5px;
+}
+.nav-bar .nav-link {
+  color: #fff;
+}
+.nav-bar .active {
+  color: #ffcb9a;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.skillset {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillset .title {
+  font-size: 2em;
+}
+.skillset .row {
+  margin: 1em 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.skillset .row .column {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillset .row .column .subtitle {
+  text-align: center;
+  font-size: 1.5em;
+}
+.skillset .row .column .skillbar {
+  margin: 1em 0;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #d1e8e2;
+}
+.skillset .row .column .skillbar .progress {
+  text-align: right;
+  padding: 1em;
+  width: 10%;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+.skillset .row .column .skillbar .progress .skillName {
+  position: absolute;
+  left: 10%;
+}
+.skillset .row .column .skillbar .blue {
+  background-color: #116466;
+}
+.skillset .row .column .skillbar .gray {
+  background-color: #2c3531;
+}
+.skillset .row .column .skillbar .brown {
+  background-color: #d9b08c;
 }
 
 /*# sourceMappingURL=style.css.map */
