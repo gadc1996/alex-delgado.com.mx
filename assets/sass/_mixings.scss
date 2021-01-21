@@ -1,0 +1,19 @@
+@use 'variables';
+
+@mixin title{
+    font-weight: 900;
+    font-size: 2.5em;
+    color: variables.$gray;
+}
+
+@mixin subtitle{
+    text-align: center;
+    font-size: 1.5em;
+    margin: .5em;
+}
+@mixin divider{
+    height: 5px;
+    width: 100px;
+    border-radius: 2px;
+    margin: .5em;
+}

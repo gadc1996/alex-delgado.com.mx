@@ -1,14 +1,16 @@
 @use 'variables';
-
+@use 'mixings';
 .skillset{
     padding: 3em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     .title{
-        font-weight: 900;
-        font-size: 2.5em;
-        color: variables.$gray;
+        @include mixings.title;
+    }
+    .divider{
+        @include mixings.divider;
+        background-color: variables.$gray;
     }
     .personal-info{
         font-size: 1.5em;
@@ -37,9 +39,7 @@
                 width: 50%;
             }
             .subtitle{
-                text-align: center;
-                font-size: 1.5em;
-                margin: .5em;
+                @include mixings.subtitle;
                 color: variables.$gray;
             }
             .skillbar{

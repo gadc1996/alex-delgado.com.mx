@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 a {
@@ -86,6 +85,13 @@ a:hover {
   font-size: 2.5em;
   color: #2c3531;
 }
+.skillset .divider {
+  height: 5px;
+  width: 100px;
+  border-radius: 2px;
+  margin: 0.5em;
+  background-color: #2c3531;
+}
 .skillset .personal-info {
   font-size: 1.5em;
   font-weight: 500;
@@ -151,9 +157,12 @@ a:hover {
 }
 
 .contact {
-  height: 50vh;
   width: 100%;
   background-color: #116466;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2em 0;
 }
 .contact .decoration {
   width: 100%;
@@ -162,7 +171,77 @@ a:hover {
 }
 .contact .decoration .decoration-image {
   width: 100%;
-  margin: none;
+  margin: 0 0 5em 0;
+}
+.contact .subtitle {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+.contact .title {
+  font-weight: 900;
+  font-size: 2.5em;
+  color: #2c3531;
+  color: #d1e8e2;
+}
+.contact .divider {
+  height: 5px;
+  width: 100px;
+  border-radius: 2px;
+  margin: 0.5em;
+  background-color: #d1e8e2;
+}
+.contact .form {
+  width: 40%;
+}
+.contact .form .form-group {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.5em 0;
+}
+.contact .form .form-group .form-input {
+  background-color: #2c3531;
+  border: none;
+  padding: 0.5em;
+  width: 100%;
+  color: #d1e8e2;
+  resize: none;
+}
+.contact .form .form-group .form-input::placeholder {
+  color: #d1e8e2;
+  font-size: 1.2em;
+}
+.contact .form .form-group .submit {
+  border: 2px solid #d1e8e2;
+  color: #d1e8e2;
+  background-color: #116466;
+  width: 20%;
+  font-size: 1em;
+  padding: 0.5em;
+  transition: 0.5s;
+}
+.contact .form .form-group .submit:hover {
+  background-color: #2c3531;
+  border: 1px solid #2c3531;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2c3531;
+  padding: 1em 0;
+}
+footer .socials {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .socials a .social-logo {
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

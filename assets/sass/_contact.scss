@@ -1,17 +1,68 @@
 @use 'variables';
+@use 'mixings';
 
 .contact{
-    height: 50vh;
     width: 100%;
     background-color: variables.$blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 0 2em 0;
     .decoration{
         width: 100%;
         display: flex;
         align-items: center;
         .decoration-image{
             width: 100%;
-            margin: none;
+            margin: 0 0  5em 0;
         }
     }
-
+    .subtitle{
+        @include mixings.subtitle;
+    }
+    .title{
+        @include mixings.title;
+        color: variables.$light-gray;
+    }
+    .divider{
+        @include mixings.divider;
+        background-color: variables.$light-gray;
+    }
+    .form{
+        width: 40%;
+        .form-group{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: .5em 0;
+            .form-input{
+                background-color: variables.$gray;
+                border: none;
+                padding: .5em;
+                width: 100%;
+                color: variables.$light-gray;
+                resize: none;
+            }
+            .form-input::placeholder{
+                color: variables.$light-gray;
+                font-size: 1.2em;
+            }
+            .submit{
+                border: 2px solid variables.$light-gray;
+                color: variables.$light-gray;
+                background-color: variables.$blue;
+                width: 20%;
+                font-size: 1em;
+                padding: .5em;
+                transition: .5s;
+            }
+            .submit:hover{
+                background-color: variables.$gray;
+                border: 1px solid variables.$gray;
+                transition: .2s;
+                cursor: pointer;
+            }
+        }
+    }
 }
