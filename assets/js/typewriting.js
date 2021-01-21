@@ -48,7 +48,6 @@ class TypeWriter{
             //Pause before start typing
             typeSpeed = this.waitStart;
         }
-        console.log(this.txt);
         setTimeout(() => this.type(), typeSpeed);
     }
 }

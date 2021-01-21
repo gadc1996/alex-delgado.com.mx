@@ -21,7 +21,8 @@ class ProgressBar{
 }
 
 let options = {
-    threshold: 0
+    threshold: 0,
+    rootMargin: '0px 0px -30% 0px'
 }
 
 var progressBars = document.querySelectorAll('.progress');
@@ -30,7 +31,7 @@ let observer = new IntersectionObserver((progressBars) => {
         if(progressBar.isIntersecting ){
             let fill = progressBar.target.getAttribute('data-fill');
             let skillName = progressBar.target.innerHTML;
-            new ProgressBar(progressBar.target, fill, skillName)
+            setTimeout(()=> new ProgressBar(progressBar.target, fill, skillName), 1500);
             observer.unobserve(progressBar.target)
         }
     });

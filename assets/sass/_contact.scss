@@ -30,6 +30,7 @@
     }
     .form{
         width: 40%;
+        margin-bottom: 10em;
         .form-group{
             height: auto;
             display: flex;
@@ -39,10 +40,13 @@
             .form-input{
                 background-color: variables.$gray;
                 border: none;
-                padding: .5em;
+                padding: 1em;
                 width: 100%;
                 color: variables.$light-gray;
                 resize: none;
+            }
+            textarea{
+                height: 8em;
             }
             .form-input::placeholder{
                 color: variables.$light-gray;

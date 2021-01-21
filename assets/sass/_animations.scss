@@ -1,0 +1,53 @@
+.animation{
+    opacity: 0;
+}
+@keyframes left{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }   
+}
+@keyframes right{
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }   
+}
+@keyframes up{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }   
+}
+@keyframes down{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }   
+}
+@keyframes scale{
+    from{
+        scale: .5;
+        opacity: 0;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }   
+}
