@@ -6,7 +6,6 @@ class Animation{
         this.animate();
     }
     animate(){
-        console.log('animated');
         if(this.isAnimated == false){
             switch(this.animationDirection){
                 case 'left':

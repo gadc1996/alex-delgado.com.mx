@@ -6,15 +6,15 @@
 		<link rel="stylesheet" href="assets/css/style.css" media="all">
 </head>
 <body>
-	<div class="parallax" id="parallax">
+	<div class="parallax navbarSelector" data-selector="0" id="parallax">
 		<h1>Hola, mi nombre es Alex Delgado<br>Soy <span class="typing" data-speed="70" data-wait-end="1000" data-wait-start="50" data-words='["Desarollador","Programador", "Entusiasta del Open Source"]'>.</span></h1>
 	</div>
 	<nav class="nav-bar">
-		<a class="nav-link active" href="#">INICIO</a>
+		<a class="nav-link" href="#">INICIO</a>
 		<a class="nav-link" href="#">SOBRE MI</a>
 		<a class="nav-link" href="#">CONTACTO</a>
 	</nav>
-	<section class="skillset">
+	<section class="skillset navbarSelector" data-selector="1" >
 		<h2 class="title animation" data-delay="100" data-direction="left">Sobre mi</h2>
 		<div class="divider animation" data-delay="100" data-direction="left"></div>
 		<div class="personal-info animation" data-delay="100" data-direction="left">
@@ -101,7 +101,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="contact">
+	<section class="contact navbarSelector" data-selector="2">
 		<div class="decoration">
 			<img class="decoration-image" src="assets/img/page-decoration.svg" alt="">
 		</div>
@@ -124,7 +124,7 @@
 		</form>
 	</section>
 	<footer>
-		<div class="socials">
+		<div class="socials ">
 			<a href="#"><img class="social-logo" src="assets/img/013-twitter-1.svg" alt=""></a>
 			<a href="#"><img class="social-logo" src="assets/img/031-linkedin.svg" alt=""></a>
 			<a href="#"><img class="social-logo" src="assets/img/034-instagram.svg" alt=""></a>
@@ -135,6 +135,7 @@
 	<script src="assets/js/typewriting.js" ></script>
 	<script src="assets/js/skillbars.js"></script>
 	<script src="assets/js/sticky-navbar.js"></script>
+	<script src="assets/js/navbarSelector.js"></script>
 	<script src="assets/js/animations.js"></script>
 	<script src="assets/js/three.min.js"></script>
 	<script src="assets/js/vanta.dots.min.js"></script>
