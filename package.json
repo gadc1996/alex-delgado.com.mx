@@ -21,14 +21,18 @@
   },
   "homepage": "https://github.com/gadc1996/alex-delgado.com.mx#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
     "node-sass": "^5.0.0"
   },
   "dependencies": {
     "browser-sync": "^2.26.13",
-    "gulp-rename": "^2.0.0",
-    "gulp-uglifycss": "^1.1.0",
     "typed.js": "^2.0.11"
   }
 }
