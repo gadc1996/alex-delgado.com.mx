@@ -8,7 +8,7 @@ navbarOptions = {
 
 sectionObserver = new IntersectionObserver( sections => {
     sections.forEach( section => {
-        
+        console.log('runing');
         if(section.isIntersecting){
             navLinks.forEach( navLink => navLink.classList.remove('active'));
             switch(section.target.getAttribute("data-selector")){

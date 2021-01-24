@@ -5,20 +5,21 @@ footer{
     padding: 1em 0;
     .socials{
         margin: auto;
-        width: 30%;
+        width: 60%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         a{
             width: 100%;
+            text-align: center;
             .social-logo{
-                width: 100%;    
+                width: 30%;    
             }
         }
     }
 }
 
-@media screen and (max-width: 310px){
+@media screen and (max-width: 375px){
     footer{
         .socials{
             width: 80%;

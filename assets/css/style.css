@@ -96,7 +96,7 @@ a:hover {
   animation: blink-caret 0.75s step-end infinite;
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 375px) {
   canvas {
     height: 100vh;
   }
@@ -139,7 +139,7 @@ a:hover {
   width: 100%;
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 375px) {
   .mobil-nav {
     background-color: #2c3531;
     display: flex;
@@ -246,7 +246,7 @@ a:hover {
   background-color: #d9b08c;
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 375px) {
   .skillset .title {
     font-size: 1.7em;
   }
@@ -348,7 +348,7 @@ a:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 375px) {
   .contact {
     padding: 0;
   }
@@ -380,19 +380,20 @@ footer {
 }
 footer .socials {
   margin: auto;
-  width: 30%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 footer .socials a {
   width: 100%;
+  text-align: center;
 }
 footer .socials a .social-logo {
-  width: 100%;
+  width: 30%;
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 375px) {
   footer .socials {
     width: 80%;
   }
@@ -403,27 +404,30 @@ footer .socials a .social-logo {
     width: 50%;
   }
 }
-.burger {
-  width: 4em;
-  height: 4em;
-  background-color: #116466;
-  position: fixed;
-  bottom: 1em;
-  left: 1em;
-  z-index: 100;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-}
-.burger .line {
-  width: 2em;
-  height: 0.5em;
-  background-color: #fff;
-  margin: 2px;
-  border-radius: 2px;
+@media screen and (max-width: 375px) {
+  .burger {
+    width: 4em;
+    height: 4em;
+    background-color: #116466;
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    z-index: 100;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .burger .line {
+    width: 2em;
+    height: 0.5em;
+    background-color: #fff;
+    margin: 2px;
+    border-radius: 2px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
