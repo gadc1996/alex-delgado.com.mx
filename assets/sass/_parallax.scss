@@ -1,7 +1,6 @@
 @use 'variables';
-
-.parallax{
-    
+@use 'animations';
+.parallax{    
     // background-image: url('/assets/img/background.jpeg');
     width: 100vw;
     height: 100vh;
@@ -12,12 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-left: 2em;
+    padding: 0 2em;
     h1{
         font-size: 2.8em; 
         color: variables.$brown;
         position: relative;
-        white-space: nowrap;
         .typing{
             color: variables.$light-brown;
             border-right: .15em solid variables.$brown;
@@ -25,14 +23,16 @@
         }
     }
 }
-
-.test{
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
+@media screen and(max-width: 310px){
+    canvas{
+        height: 100vh;
+    }
+    .parallax{
+        height: 100vh;
+        width: 80%;
+        h1{
+            font-size: 1.5em;
+            white-space:normal;
+        }
+    }
 }
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: variables.$brown; }
-  }

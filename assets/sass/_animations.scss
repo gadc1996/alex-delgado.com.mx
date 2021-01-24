@@ -1,6 +1,9 @@
+@use 'variables';
+
 .animation{
     opacity: 0;
 }
+
 @keyframes left{
     from{
         transform: translateX(-100px);
@@ -51,3 +54,7 @@
         opacity: 1;
     }   
 }
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: variables.$brown; }
+  }

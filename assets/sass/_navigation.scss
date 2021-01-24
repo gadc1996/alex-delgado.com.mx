@@ -1,16 +1,19 @@
 @use 'variables';
+.mobil-nav{
+    display: none;
+}
 
 .nav-bar{
     background-color: variables.$gray;
     padding: 1em 2em;
     display: flex;
     position: relative;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     z-index: 1;
     border-bottom: variables.$blue solid 5px;
+    flex-direction: row;
     .nav-link{
         color: variables.$navigation-color;
     }
@@ -23,3 +26,26 @@
     top: 0;
     width: 100%;
   }
+
+@media screen and (max-width: 310px){
+    .mobil-nav{
+        background-color: variables.$gray;
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-items: center;
+        width: 0%;
+        height: 100%;
+        z-index: 10;
+        border-bottom: variables.$blue solid 5px;
+        flex-direction: column;
+        transition: .3s;
+        .nav-link{
+            color: variables.$navigation-color;
+            display: none;
+        }
+    }
+    .nav-bar{
+        display: none;
+    }
+}

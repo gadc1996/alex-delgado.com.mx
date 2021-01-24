@@ -10,8 +10,23 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         a{
+            width: 100%;
             .social-logo{
-                width: 30px;    
+                width: 100%;    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 310px){
+    footer{
+        .socials{
+            width: 80%;
+            a{
+                width: 100%;
+                .social-logo{
+                    width: 50%;
+                }
             }
         }
     }
