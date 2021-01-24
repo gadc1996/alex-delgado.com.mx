@@ -40,9 +40,12 @@
         border-bottom: variables.$blue solid 5px;
         flex-direction: column;
         transition: .3s;
-        .nav-link{
+        .nav-link-mobil{
             color: variables.$navigation-color;
             display: none;
+        }
+        .active{
+            color: variables.$light-brown;
         }
     }
     .nav-bar{

@@ -153,9 +153,12 @@ a:hover {
     flex-direction: column;
     transition: 0.3s;
   }
-  .mobil-nav .nav-link {
+  .mobil-nav .nav-link-mobil {
     color: #fff;
     display: none;
+  }
+  .mobil-nav .active {
+    color: #ffcb9a;
   }
 
   .nav-bar {

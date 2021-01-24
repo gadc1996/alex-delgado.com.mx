@@ -1,7 +1,7 @@
 
 const burger = document.querySelector('.burger');
 const mobilMenu = document.querySelector('.mobil-nav');
-const mobilLinks = document.querySelectorAll('.mobil-nav .nav-link');
+const mobilLinks = document.querySelectorAll('.mobil-nav .nav-link-mobil');
 const footer = document.querySelector('footer');
 
 let isClosed = true;
