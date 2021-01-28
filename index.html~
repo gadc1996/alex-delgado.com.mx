@@ -1,158 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Alex Delgado</title>
-		<link rel="stylesheet" href="assets/css/style.css" media="all">
-</head>
-<body>
-	<nav class="mobil-nav">
-		<a class="nav-link-mobil active" href="#">INICIO</a>
-		<a class="nav-link-mobil" href="#">SOBRE MI</a>
-		<a class="nav-link-mobil" href="#">CONTACTO</a>
-	</nav>
-	<div class="burger">
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-	</div>
-	<div class="parallax navbarSelector" data-selector="0" id="parallax">
-		<h1>Hola, mi nombre es Alex Delgado<br>Soy <span class="typing" data-speed="70" data-wait-end="1000" data-wait-start="50" data-words='["Desarollador","Programador", "Entusiasta del Open Source"]'>.</span></h1>
-	</div>
-	<nav class="nav-bar">
-		<a class="nav-link active" href="#">INICIO</a>
-		<a class="nav-link" href="#">SOBRE MI</a>
-		<a class="nav-link" href="#">CONTACTO</a>
-	</nav>
-	<section class="skillset navbarSelector" data-selector="1" >
-		<h2 class="title animation" data-delay="100" data-direction="left">Sobre mi</h2>
-		<div class="divider animation" data-delay="100" data-direction="left"></div>
-		<div class="personal-info animation" data-delay="100" data-direction="left">
-			Ayudo a diseñadores y negocios a dar vida a sus ideas <br>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Alex Delgado</title>
+		<link rel="stylesheet" href="assets/css/style.css" media="all" />
+	</head>
+	<body>
+		<nav class="mobil-nav">
+			<a class="nav-link-mobil active" href="index.html">INICIO</a>
+			<a class="nav-link-mobil" href="#sectionAbout">SOBRE MI</a>
+			<a class="nav-link-mobil" href="#sectionContact">CONTACTO</a>
+		</nav>
+		<div class="burger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
 		</div>
-		<div class="row">
-			<div class="column info-column">
-				<img src="assets/img/web-design.svg" class="service-img animation"  alt="" data-delay="100" data-direction="scale">
-				<h3 class="subtitle animation" data-delay="100" data-direction="scale">Diseño</h3>
-			</div>
-			<div class="column info-column">
-				<img src="assets/img/responsive.svg" class="service-img animation" alt="" data-delay="100" data-direction="scale">
-				<h3 class="subtitle animation" data-delay="100" data-direction="scale">Desarollo</h3>
-			</div>
-			<div class="column info-column">
-				<img src="assets/img/analytics.svg" class="service-img animation" alt="" data-delay="100" data-direction="scale">
-				<h3 class="subtitle animation" data-delay="100" data-direction="scale">Optimización</h3>
-			</div>
+		<div class="parallax navbarSelector" data-selector="0" id="parallax">
+			<h1>
+				Hola, mi nombre es Alex Delgado
+				<br />
+				Soy
+				<span
+					class="typing"
+					data-speed="70"
+					data-wait-end="1000"
+					data-wait-start="50"
+					data-words='["Desarollador","Programador", "Entusiasta del Open Source"]'
+				>
+					.
+				</span>
+			</h1>
 		</div>
-		<div class="row">
-			<div class="column">
-				<h3 class="subtitle animation" data-delay="100" data-direction="up">Lenguajes</h3>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress blue" data-fill="85" ><span class="skillName">HTML</span> </div>
+		<nav class="nav-bar">
+			<a class="nav-link active" href="#">INICIO</a>
+			<a class="nav-link" href="#sectionAbout">SOBRE MI</a>
+			<a class="nav-link" href="#sectionContact">CONTACTO</a>
+		</nav>
+		<section
+			class="skillset navbarSelector"
+			id="sectionAbout"
+			data-selector="1"
+		>
+			<h2 class="title animation" data-delay="100" data-direction="left">
+				Sobre mi
+			</h2>
+			<div
+				class="divider animation"
+				data-delay="100"
+				data-direction="left"
+			></div>
+			<div
+				class="personal-info animation"
+				data-delay="100"
+				data-direction="left"
+			>
+				Ayudo a diseñadores y negocios a dar vida a sus ideas
+				<br />
+			</div>
+			<div class="row">
+				<div class="column info-column">
+					<img
+						src="assets/img/web-design.svg"
+						class="service-img animation"
+						alt=""
+						data-delay="100"
+						data-direction="scale"
+					/>
+					<h3
+						class="subtitle animation"
+						data-delay="100"
+						data-direction="scale"
+					>
+						Diseño
+					</h3>
 				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress gray" data-fill="80"><span class="skillName">CSS</span></div>
+				<div class="column info-column">
+					<img
+						src="assets/img/responsive.svg"
+						class="service-img animation"
+						alt=""
+						data-delay="100"
+						data-direction="scale"
+					/>
+					<h3
+						class="subtitle animation"
+						data-delay="100"
+						data-direction="scale"
+					>
+						Desarollo
+					</h3>
 				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress brown" data-fill="50"><span class="skillName">JS</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress blue" data-fill="40"><span class="skillName">Python</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress gray" data-fill="40"><span class="skillName">PHP</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress brown" data-fill="40"><span class="skillName">Bash</span></div>
-				</div>
-			</div><div class="column">
-				<h3 class="subtitle animation" data-delay="100" data-direction="up">Herramientas</h3>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress blue" data-fill="70" ><span class="skillName">VS Code</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress gray" data-fill="50"><span class="skillName">VIM</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress brown" data-fill="70"><span class="skillName">Git</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress blue" data-fill="50"><span class="skillName">Gimp</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress gray" data-fill="50"><span class="skillName">Inkscape</span></div>
-				</div>
-				<h3 class="subtitle animation" data-delay="100" data-direction="up">OS</h3>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress brown" data-fill="60" ><span class="skillName">Linux</span></div>
-				</div>
-			</div><div class="column">
-				<h3 class="subtitle animation" data-delay="100" data-direction="up">Frameworks</h3>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress blue" data-fill="80" ><span class="skillName">Sass</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress gray" data-fill="50"><span class="skillName">NodeJS</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress brown" data-fill="40"><span class="skillName">React</span></div>
-				</div>
-				<h3 class="subtitle animation" data-delay="100" data-direction="up">Databases</h3>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress blue" data-fill="50" ><span class="skillName">MySQL</span></div>
-				</div>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress gray" data-fill="50"><span class="skillName">Mongodb</span></div>
-				</div>
-				<h3 class="subtitle animation" data-delay="100" data-direction="up">CMS</h3>
-				<div class="skillbar animation" data-delay="500" data-direction="up">
-					<div class="progress brown" data-fill="60" ><span class="skillName">WordPress</span></div>
+				<div class="column info-column">
+					<img
+						src="assets/img/analytics.svg"
+						class="service-img animation"
+						alt=""
+						data-delay="100"
+						data-direction="scale"
+					/>
+					<h3
+						class="subtitle animation"
+						data-delay="100"
+						data-direction="scale"
+					>
+						Optimización
+					</h3>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="contact navbarSelector" data-selector="2">
-		<div class="decoration">
-			<img class="decoration-image" src="assets/img/page-decoration.svg" alt="">
-		</div>
-		<h2 class="title animation" data-delay="100" data-direction="left">Contacto</h2>
-		<div class="divider animation" data-delay="200" data-direction="left"></div>
-		<h3 class="subtitle animation" data-delay="100" data-direction="left">Tienes alguna pregunta o quieres que trabajemos juntos?</h3>
-		<form action="#" method="post" class="form animation" data-delay="100" data-direction="scale" >
-			<div class="form-group">
-				<input type="text" class="form-input" placeholder="Nombre">
+			<div class="row">
+				<div class="column">
+					<h3 class="subtitle animation" data-delay="100" data-direction="up">
+						Lenguajes
+					</h3>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress blue" data-fill="85">
+							<span class="skillName">HTML</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress gray" data-fill="80">
+							<span class="skillName">CSS</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress brown" data-fill="50">
+							<span class="skillName">JS</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress blue" data-fill="40">
+							<span class="skillName">Python</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress gray" data-fill="40">
+							<span class="skillName">PHP</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress brown" data-fill="40">
+							<span class="skillName">Bash</span>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<h3 class="subtitle animation" data-delay="100" data-direction="up">
+						Herramientas
+					</h3>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress blue" data-fill="70">
+							<span class="skillName">VS Code</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress gray" data-fill="50">
+							<span class="skillName">VIM</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress brown" data-fill="70">
+							<span class="skillName">Git</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress blue" data-fill="50">
+							<span class="skillName">Gimp</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress gray" data-fill="50">
+							<span class="skillName">Inkscape</span>
+						</div>
+					</div>
+					<h3 class="subtitle animation" data-delay="100" data-direction="up">
+						OS
+					</h3>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress brown" data-fill="60">
+							<span class="skillName">Linux</span>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<h3 class="subtitle animation" data-delay="100" data-direction="up">
+						Frameworks
+					</h3>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress blue" data-fill="80">
+							<span class="skillName">Sass</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress gray" data-fill="50">
+							<span class="skillName">NodeJS</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress brown" data-fill="40">
+							<span class="skillName">React</span>
+						</div>
+					</div>
+					<h3 class="subtitle animation" data-delay="100" data-direction="up">
+						Databases
+					</h3>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress blue" data-fill="50">
+							<span class="skillName">MySQL</span>
+						</div>
+					</div>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress gray" data-fill="50">
+							<span class="skillName">Mongodb</span>
+						</div>
+					</div>
+					<h3 class="subtitle animation" data-delay="100" data-direction="up">
+						CMS
+					</h3>
+					<div class="skillbar animation" data-delay="500" data-direction="up">
+						<div class="progress brown" data-fill="60">
+							<span class="skillName">WordPress</span>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="form-group">
-				<input type="email" class="form-input" placeholder="Email">
+		</section>
+		<section
+			class="contact navbarSelector"
+			id="sectionContact"
+			data-selector="2"
+		>
+			<div class="decoration">
+				<img
+					class="decoration-image"
+					src="assets/img/page-decoration.svg"
+					alt=""
+				/>
 			</div>
-			<div class="form-group">
-				<textarea class="form-input" placeholder="Mensaje..."></textarea>
+			<h2 class="title animation" data-delay="100" data-direction="left">
+				Contacto
+			</h2>
+			<div
+				class="divider animation"
+				data-delay="200"
+				data-direction="left"
+			></div>
+			<h3 class="subtitle animation" data-delay="100" data-direction="left">
+				Tienes alguna pregunta o quieres que trabajemos juntos?
+			</h3>
+			<form
+				action="#"
+				method="post"
+				class="form animation"
+				data-delay="100"
+				data-direction="scale"
+			>
+				<div class="form-group">
+					<input type="text" class="form-input" placeholder="Nombre" />
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-input" placeholder="Email" />
+				</div>
+				<div class="form-group">
+					<textarea class="form-input" placeholder="Mensaje..."></textarea>
+				</div>
+				<div class="form-group">
+					<button class="submit" type="submit">Enviar</button>
+				</div>
+			</form>
+		</section>
+		<footer>
+			<div class="socials">
+				<a href="#">
+					<img class="social-logo" src="assets/img/013-twitter-1.svg" alt="" />
+				</a>
+				<a href="#">
+					<img class="social-logo" src="assets/img/031-linkedin.svg" alt="" />
+				</a>
+				<a href="#">
+					<img class="social-logo" src="assets/img/034-instagram.svg" alt="" />
+				</a>
+				<a href="#">
+					<img class="social-logo" src="assets/img/039-github.svg" alt="" />
+				</a>
+				<a href="#">
+					<img class="social-logo" src="assets/img/045-facebook.svg" alt="" />
+				</a>
 			</div>
-			<div class="form-group">
-				<button class='submit' type="submit">Enviar</button>
-			</div>
-		</form>
-	</section>
-	<footer>
-		<div class="socials ">
-			<a href="#"><img class="social-logo" src="assets/img/013-twitter-1.svg" alt=""></a>
-			<a href="#"><img class="social-logo" src="assets/img/031-linkedin.svg" alt=""></a>
-			<a href="#"><img class="social-logo" src="assets/img/034-instagram.svg" alt=""></a>
-			<a href="#"><img class="social-logo" src="assets/img/039-github.svg" alt=""></a>
-			<a href="#"><img class="social-logo" src="assets/img/045-facebook.svg" alt=""></a>
-		</div>
-	</footer>
-	<script src="assets/js/burger.js"></script>
-	<script src="assets/js/typewriting.js" ></script>
-	<script src="assets/js/skillbars.js"></script>
-	<script src="assets/js/sticky-navbar.js"></script>
-	<script src="assets/js/navbarSelector.js"></script>
-	<script src="assets/js/animations.js"></script>
-	<script src="assets/js/min/three.min.js"></script>
-	<script src="assets/js/min/vanta.dots.min.js"></script>
-	<script src="assets/js/min/vanta.config.js"></script>
-</body>
+		</footer>
+		<script src="assets/js/burger.js"></script>
+		<script src="assets/js/typewriting.js"></script>
+		<script src="assets/js/skillbars.js"></script>
+		<script src="assets/js/sticky-navbar.js"></script>
+		<script src="assets/js/navbarSelector.js"></script>
+		<script src="assets/js/animations.js"></script>
+		<script src="assets/js/min/three.min.js"></script>
+		<script src="assets/js/min/vanta.dots.min.js"></script>
+		<script src="assets/js/min/vanta.config.js"></script>
+	</body>
 </html>
-	<!-- 
+<!-- 
 		atributions <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
  -->
